@@ -84,19 +84,19 @@ export const MintCountdown: React.FC<MintCountdownProps> = ({
             <span className={classes.item}>
               {hours < 10 ? `0${hours}` : hours}
             </span>
-            <span>hrs</span>
+            <span>Hrs</span>
           </Paper>
           <Paper elevation={0}>
             <span className={classes.item}>
               {minutes < 10 ? `0${minutes}` : minutes}
             </span>
-            <span>mins</span>
+            <span>Mins</span>
           </Paper>
           <Paper elevation={0}>
             <span className={classes.item}>
               {seconds < 10 ? `0${seconds}` : seconds}
             </span>
-            <span>secs</span>
+            <span>Secs</span>
           </Paper>
         </div>
       );
