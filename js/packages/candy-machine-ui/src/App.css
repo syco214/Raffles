@@ -1,3 +1,8 @@
 .App {
   text-align: center;
 }
+
+.particle {
+  position: fixed;
+  z-index: -1;
+}

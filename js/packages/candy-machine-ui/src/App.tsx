@@ -3,7 +3,6 @@ import { useMemo } from 'react';
 import * as anchor from '@project-serum/anchor';
 import Home from './Home';
 import Appbar from './layouts/Appbar';
-import Particles from "react-tsparticles";
 import { clusterApiUrl } from '@solana/web3.js';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import {
@@ -21,6 +20,7 @@ import {
 import { WalletDialogProvider } from '@solana/wallet-adapter-material-ui';
 
 import { ThemeProvider, createTheme } from '@material-ui/core';
+import Particle from "./Particles";
 
 const theme = createTheme({
   palette: {
@@ -66,78 +66,7 @@ const App = () => {
 
   return (
     <>
-    <Particles
-      options={{
-        background: {
-          color: {
-            value: "transparent",
-          },
-        },
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
-            onHover: {
-              enable: true,
-              mode: "repulse",
-            },
-            resize: true,
-          },
-          modes: {
-            bubble: {
-              distance: 400,
-              duration: 2,
-              opacity: 0.8,
-              size: 40,
-            },
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 100,
-              duration: 0.4,
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: "#ffffff",
-          },
-          collisions: {
-            enable: true,
-          },
-          move: {
-            direction: "none",
-            enable: true,
-            outMode: "bounce",
-            random: false,
-            speed: 0.5,
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              area: 800,
-            },
-            value: 180,
-          },
-          opacity: {
-            value: 0.5,
-          },
-          shape: {
-            type: "star",
-          },
-          size: {
-            random: true,
-            value: 1,
-          },
-        },
-        detectRetina: true,
-      }}
-    />
+    <Particle/>
     <ThemeProvider theme={theme}>
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>

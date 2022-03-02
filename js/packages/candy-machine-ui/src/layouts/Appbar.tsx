@@ -56,31 +56,31 @@ export default function PrimarySearchAppBar() {
                               type="button"
                               onClick={(e) => {
                               e.preventDefault();
-                              window.location.href='http://google.com';}}
+                              window.location.href='https://bountyhunterspaceguild.com/';}}
                               className={classes.title} variant="text">                         
-                              Explore
+                              Website
                          </Button>
                          <Button 
                               type="button"
                               onClick={(e) => {
                               e.preventDefault();
-                              window.location.href='http://google.com';}}
+                              window.location.href='https://twitter.com/BountyHunterNFT';}}
                               className={classes.title} variant="text">                         
-                              Artwork
+                              Twitter
                          </Button>
                          <Button 
                               type="button"
                               onClick={(e) => {
                               e.preventDefault();
-                              window.location.href='http://google.com';}}
+                              window.location.href='https://discord.com/invite/mWtejvGMTQ';}}
                               className={classes.title} variant="text">                         
-                              Creator
+                              Discord
                          </Button>
                          <Button         
                               type="button"
                               onClick={(e) => {
                               e.preventDefault();
-                              window.location.href='http://google.com';}}
+                              window.location.href='https://raydium.io/swap/?from=BNTYkJdHkdP9eH4uGouRkqz9RifYL8knHVVVmBMgcNzx&to=11111111111111111111111111111111';}}
                               className={classes.title} variant="text">
                               Purchase BNTY
                          </Button>

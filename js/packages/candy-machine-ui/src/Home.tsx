@@ -87,7 +87,9 @@ const useStyles = makeStyles((theme: Theme) =>
      })
 );
 
-const MintContainer = styled.div``; // add your owns styles here
+const MintContainer = styled.div`
+  z-index: 5;
+`; // add your owns styles here
 
 export interface HomeProps {
   candyMachineId?: anchor.web3.PublicKey;
@@ -335,7 +337,7 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <>
+    <MintContainer>
     <Grid container style={{marginTop: 100}} spacing={3}>
          <Grid item md={3} xs={12}></Grid>
          <Grid item md={6} xs={12}>
@@ -520,7 +522,7 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
-    </>
+    </MintContainer>
   );
 };
 
