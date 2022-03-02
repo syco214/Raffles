@@ -369,7 +369,7 @@ const Home = (props: HomeProps) => {
                                                       <Typography
                                                         variant="h6"
                                                         color="textPrimary"
-                                                        style={{ fontWeight: 'bold' }}
+                                                        style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                       >
                                                         {isWhitelistUser && discountPrice
                                                           ? ` ${formatNumber.asNumber(discountPrice)} $BNTY/ticket`
@@ -437,7 +437,9 @@ const Home = (props: HomeProps) => {
                                                                   variant="h6"
                                                                   color="textPrimary"
                                                                   style={{
+                                                                    fontFamily:'Saira',
                                                                     fontWeight: 'bold',
+                                                                    
                                                                   }}
                                                                 >
                                                                   {`${itemsRemaining}`}
