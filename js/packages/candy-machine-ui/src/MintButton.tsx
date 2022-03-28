@@ -56,7 +56,7 @@ export const MintButton = ({
       return <CircularProgress />;
     }
 
-    return 'BUY TICKET';
+    return 'BUY ITEM';
   };
 
   return (

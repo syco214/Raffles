@@ -261,19 +261,19 @@ const Home = (props: HomeProps) => {
           candyMachine.state.isSoldOut = remaining === 0;
           setAlertState({
             open: true,
-            message: 'Congratulations! Ticket Purchased!',
+            message: 'Congratulations! Weapon Purchased!',
             severity: 'success',
           });
         } else {
           setAlertState({
             open: true,
-            message: 'Ticket Purchase Failed! Please try again!',
+            message: 'Weapon Purchase Failed! Please try again!',
             severity: 'error',
           });
         }
       }
     } catch (error: any) {
-      let message = error.msg || 'Ticket Purchase Failed! Please try again!';
+      let message = error.msg || 'Weapon Purchase Failed! Please try again!';
       if (!error.msg) {
         if (!error.message) {
           message = 'Transaction Timeout! Please try again.';
@@ -344,7 +344,7 @@ const Home = (props: HomeProps) => {
               <Card className={classes.root}>
                    <CardContent>
                         <Header className={classes.title} variant="h5" gutterBottom>
-                             BHSG RAFFLE No. 1  
+                             Bounty Hunter Space Guild Black Market  
                         </Header>
                    </CardContent>
                    <CardContent className={classes.cardSection}>
@@ -355,7 +355,7 @@ const Home = (props: HomeProps) => {
                              <Grid item md={7} xs={12}>
                                   <Box className={classes.box}>
                                        <Box my={1}>
-                                            <Title>Bounty Hunter: Leonidite</Title>
+                                            <Title>Alkavi’r Shortsword</Title>
                                        </Box>
                                        <Grid container justifyContent="center">
                                             <Grid item xs={5}>
@@ -364,7 +364,7 @@ const Home = (props: HomeProps) => {
                                                       <Head variant="body2" color="textSecondary">
                                                         {isWhitelistUser && discountPrice
                                                           ? 'Discount Price'
-                                                          : 'Price Per Ticket'}
+                                                          : 'Price Per Item'}
                                                       </Head>
                                                       <Typography
                                                         variant="h6"
@@ -372,7 +372,7 @@ const Home = (props: HomeProps) => {
                                                         style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                       >
                                                         {isWhitelistUser && discountPrice
-                                                          ? ` ${formatNumber.asNumber(discountPrice)} $BNTY/ticket`
+                                                          ? ` ${formatNumber.asNumber(discountPrice)} $BNTY/Item`
                                                           : ` ${formatNumber.asNumber(
                                                               candyMachine.state.price,
                                                             )} $BNTY`}
@@ -389,8 +389,8 @@ const Home = (props: HomeProps) => {
                                             }
 
                                             <Grid item xs={6}>
-                                                 <Head color="textSecondary" variant="body2">Raffle Ends In</Head>
-                                                 <Grid item xs={10}>
+                                                 <Head color="textSecondary" variant="body2">Sale Ends In</Head>
+                                                 <Grid item xs={7}>
                                                     {candyMachine && isActive && endDate && Date.now() < endDate.getTime() ? (
                                                       <>
                                                         <MintCountdown
@@ -431,7 +431,7 @@ const Home = (props: HomeProps) => {
                                                             >
                                                               <Grid item xs={12}>
                                                                 <Head variant="body2" color="textSecondary">
-                                                                  Remaining Tickets
+                                                                  Remaining Items
                                                                 </Head>
                                                                 <Typography
                                                                   variant="h6"
