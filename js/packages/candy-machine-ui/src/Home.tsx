@@ -390,7 +390,7 @@ const Home = (props: HomeProps) => {
 
                                             <Grid item xs={6}>
                                                  <Head color="textSecondary" variant="body2">Sale Ends In</Head>
-                                                 <Grid item xs={7}>
+                                                 <Grid item lg={7}>
                                                     {candyMachine && isActive && endDate && Date.now() < endDate.getTime() ? (
                                                       <>
                                                         <MintCountdown
