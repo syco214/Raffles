@@ -3,7 +3,7 @@ import { isMobile } from 'react-device-detect'
 import * as anchor from '@project-serum/anchor';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/machine.png';
+import Machine from './assets/blaster3.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Snackbar, Divider, Box } from '@material-ui/core';
@@ -344,7 +344,7 @@ const Home = (props: HomeProps) => {
               <Card className={classes.root}>
                    <CardContent>
                         <Header className={classes.title} variant="h5" gutterBottom>
-                             Bounty Hunter Space Guild Black Market  
+                          Bounty Hunter Space Guild Black Market (Week 2) 
                         </Header>
                    </CardContent>
                    <CardContent className={classes.cardSection}>
@@ -355,10 +355,10 @@ const Home = (props: HomeProps) => {
                              <Grid item md={7} xs={12}>
                                   <Box className={classes.box}>
                                        <Box my={1}>
-                                            <Title>Alkavi’r Shortsword</Title>
+                                            <Title>Jannus Mods HB-44</Title>
                                        </Box>
                                        <Grid container justifyContent="center">
-                                            <Grid item xs={5}>
+                                            <Grid item xs={5}>  
                                                  { candyMachine && (
                                                     <Grid item xs={12}>
                                                       <Head variant="body2" color="textSecondary">
@@ -387,16 +387,16 @@ const Home = (props: HomeProps) => {
                                               <Divider orientation="vertical" />
                                             </Grid>)
                                             }
-
+                                            {candyMachine && (
                                             <Grid item xs={6}>
-                                                 <Head color="textSecondary" variant="body2">Sale Ends In</Head>
-                                                 <Grid item lg={7}>
-                                                    {candyMachine && isActive && endDate && Date.now() < endDate.getTime() ? (
+                                                    {isActive && endDate && Date.now() < endDate.getTime() ? (
                                                       <>
+                                                        <Head color="textSecondary" variant="body2">Sale Ends In</Head>
+                                                        <Grid item lg={7}></Grid>
                                                         <MintCountdown
                                                           key="endSettings"
                                                           date={getCountdownDate(candyMachine)}
-                                                          style={{ justifyContent: 'flex-end' }}
+                                                          style={{ justifyContent: 'flex-end', fontFamily:'Saira', fontWeight: 'bold', marginRight: "38%"}}
                                                           status="COMPLETED"
                                                           onComplete={toggleMintButton}
                                                         />
@@ -408,12 +408,33 @@ const Home = (props: HomeProps) => {
                                                         >
                                                         </Typography>
                                                       </>
-                                                    ) : (
-                                                      <>
-                                                      </>
-                                                    )}
+                                                      ) : (
+                                                        <>
+                                                        <Head color="textSecondary" variant="body2">Sale Starts In</Head>
+                                                        <Grid item lg={7}></Grid>
+                                                        <MintCountdown
+                                                          key="goLive"
+                                                          date={getCountdownDate(candyMachine)}
+                                                          style={{ justifyContent: 'flex-end', fontFamily:'Saira', fontWeight: 'bold', marginRight: "38%" }}
+                                                          status={
+                                                            candyMachine?.state?.isSoldOut ||
+                                                            (endDate && Date.now() > endDate.getTime())
+                                                              ? 'COMPLETED'
+                                                              : isPresale
+                                                              ? 'PRESALE'
+                                                              : 'LIVE'
+                                                          }
+                                                          onComplete={toggleMintButton}
+                                                        />
+                                                        {isPresale &&
+                                                          candyMachine.state.goLiveDate &&
+                                                          candyMachine.state.goLiveDate.toNumber() >
+                                                            new Date().getTime() / 1000
+                                                          }
+                                                        </>
+                                                      )}
                                                 </Grid>                                                 
-                                            </Grid>
+                                            )}
                                        </Grid>
                                        <Box mt={5}>
                                             <Grid container spacing={3} justifyContent="center">

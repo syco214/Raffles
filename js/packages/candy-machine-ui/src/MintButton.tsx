@@ -6,7 +6,7 @@ import { GatewayStatus, useGateway } from '@civic/solana-gateway-react';
 import { useEffect, useState } from 'react';
 
 export const CTAButton = styled(Button)`
-  width: 85%;
+  width: 100%;
   height: 40px;
   color: white;
   text-transform: capitalize;
