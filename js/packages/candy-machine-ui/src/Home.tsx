@@ -365,7 +365,7 @@ const Home = (props: HomeProps) => {
                              <Grid item md={7} xs={12}>
                                   <Box className={classes.box}>
                                        <Box my={1}>
-                                            <Title>Ontonian Targeter</Title>
+                                            <Title>The Jigsaw</Title>
                                        </Box>
                                        <Grid container justifyContent="center">
                                             <Grid item xs={5}>  
