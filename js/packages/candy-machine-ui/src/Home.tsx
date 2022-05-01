@@ -345,7 +345,7 @@ const Home = (props: HomeProps) => {
               <Card className={classes.root}>
                    <CardContent>
                         <Header className={classes.title} variant="h5" gutterBottom>
-                          Bounty Hunter Space Guild Black Market (Week 4) 
+                          Bounty Hunter Space Guild Black Market (Week 5) 
                         </Header>
                    </CardContent>
                    <CardContent className={classes.cardSection}>
@@ -365,7 +365,7 @@ const Home = (props: HomeProps) => {
                              <Grid item md={7} xs={12}>
                                   <Box className={classes.box}>
                                        <Box my={1}>
-                                            <Title>Amoran Spider Brain</Title>
+                                            <Title>Starsk Pulse Rifle</Title>
                                        </Box>
                                        <Grid container justifyContent="center">
                                             <Grid item xs={5}>  
