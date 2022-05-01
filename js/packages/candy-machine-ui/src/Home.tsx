@@ -3,8 +3,8 @@ import { isMobile } from 'react-device-detect'
 import * as anchor from '@project-serum/anchor';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/brain.png';
-import Machine2 from './assets/preview brain.png';
+import Machine from './assets/blaster1.png';
+import Machine2 from './assets/blaster1sneak.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Snackbar, Divider, Box } from '@material-ui/core';

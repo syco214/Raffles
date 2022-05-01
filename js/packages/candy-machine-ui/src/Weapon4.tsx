@@ -1,7 +1,7 @@
 import { isMobile } from 'react-device-detect'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/blaster2.png';
+import Machine from './assets/brain.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Divider, Box } from '@material-ui/core';
