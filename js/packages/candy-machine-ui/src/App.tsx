@@ -7,6 +7,7 @@ import Weapon1 from './Weapon1';
 import Weapon2 from './Weapon2';
 import Weapon3 from './Weapon3';
 import Weapon4 from './Weapon4';
+import Weapon5 from './Weapon5';
 import { clusterApiUrl } from '@solana/web3.js';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import {
@@ -82,6 +83,7 @@ const App = () => {
               txTimeout={txTimeoutInMilliseconds}
               rpcHost={rpcHost}
             />
+            <Weapon5/>
             <Weapon4/>
             <Weapon3/>
             <Weapon2/>

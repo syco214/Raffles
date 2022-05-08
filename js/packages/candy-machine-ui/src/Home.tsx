@@ -3,8 +3,8 @@ import { isMobile } from 'react-device-detect'
 import * as anchor from '@project-serum/anchor';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/blaster1.png';
-import Machine2 from './assets/blaster1sneak.png';
+import Machine from './assets/berine.png';
+import Machine2 from './assets/berinesneak.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Snackbar, Divider, Box } from '@material-ui/core';
@@ -345,7 +345,7 @@ const Home = (props: HomeProps) => {
               <Card className={classes.root}>
                    <CardContent>
                         <Header className={classes.title} variant="h5" gutterBottom>
-                          Bounty Hunter Space Guild Black Market (Week 5) 
+                          Bounty Hunter Space Guild Black Market (Week 6) 
                         </Header>
                    </CardContent>
                    <CardContent className={classes.cardSection}>
@@ -365,7 +365,7 @@ const Home = (props: HomeProps) => {
                              <Grid item md={7} xs={12}>
                                   <Box className={classes.box}>
                                        <Box my={1}>
-                                            <Title>Starsk Pulse Rifle</Title>
+                                            <Title>Berine Bolt Kicker</Title>
                                        </Box>
                                        <Grid container justifyContent="center">
                                             <Grid item xs={5}>  
