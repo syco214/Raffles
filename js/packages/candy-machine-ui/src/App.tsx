@@ -8,6 +8,7 @@ import Weapon2 from './Weapon2';
 import Weapon3 from './Weapon3';
 import Weapon4 from './Weapon4';
 import Weapon5 from './Weapon5';
+import Weapon6 from './Weapon6';
 import { clusterApiUrl } from '@solana/web3.js';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import {
