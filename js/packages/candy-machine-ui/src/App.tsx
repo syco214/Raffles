@@ -84,6 +84,7 @@ const App = () => {
               txTimeout={txTimeoutInMilliseconds}
               rpcHost={rpcHost}
             />
+            <Weapon6/>
             <Weapon5/>
             <Weapon4/>
             <Weapon3/>
