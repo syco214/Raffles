@@ -3,8 +3,7 @@ import { isMobile } from 'react-device-detect'
 import * as anchor from '@project-serum/anchor';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/flame.png';
-import Machine2 from './assets/flamesneak.png';
+import Machine from './assets/spaceship.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Snackbar, Divider, Box } from '@material-ui/core';
@@ -345,27 +344,20 @@ const Home = (props: HomeProps) => {
               <Card className={classes.root}>
                    <CardContent>
                         <Header className={classes.title} variant="h5" gutterBottom>
-                          Bounty Hunter Space Guild Black Market (Week 7) 
+                          Bounty Hunter Space Guild Spaceship Collection 
                         </Header>
                    </CardContent>
                    <CardContent className={classes.cardSection}>
                         <Grid container spacing={2}>
-                          {isActive && endDate && Date.now() < endDate.getTime() ? (
                             <>
                              <Grid item md={5} xs={12}>
                                   <img src={Machine} alt="raffle" width="100%" className={classes.img} />
                              </Grid>
                             </>
-                             ) : (
-                            <>
-                              <Grid item md={5} xs={12}>
-                                <img src={Machine2} alt="raffle" width="100%" className={classes.img} />
-                              </Grid>
-                            </> )}
                              <Grid item md={7} xs={12}>
                                   <Box className={classes.box}>
                                        <Box my={1}>
-                                            <Title>JagaTech Gauntlet Flamethrower</Title>
+                                            <Title>Starfleets</Title>
                                        </Box>
                                        <Grid container justifyContent="center">
                                             <Grid item xs={5}>  
