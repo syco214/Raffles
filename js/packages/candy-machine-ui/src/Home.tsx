@@ -3,7 +3,7 @@ import { isMobile } from 'react-device-detect'
 import * as anchor from '@project-serum/anchor';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/spaceship.png';
+import Machine from './assets/sabre.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Snackbar, Divider, Box } from '@material-ui/core';
