@@ -1,7 +1,7 @@
 import { isMobile } from 'react-device-detect'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/spaceship.png';
+import Machine from './assets/sabre.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Divider, Box } from '@material-ui/core';
@@ -110,7 +110,7 @@ export default function Weapon9(){
                                                         color="textPrimary"
                                                         style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                       >
-                                                        14000 $BNTY
+                                                        15000 $BNTY
                                                       </Typography>
                                                     </Grid>
                                             </Grid>
@@ -131,7 +131,7 @@ export default function Weapon9(){
                                                           display="block"
                                                           style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                         >
-                                                          06/05/2022
+                                                          06/11/2022
                                                         </Typography>
                                                       </>
                                                 </Grid>                                                 
@@ -149,7 +149,7 @@ export default function Weapon9(){
                                                         color="textPrimary"
                                                         style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                       >
-                                                        1307
+                                                        60
                                                       </Typography>
                                                     </Grid>
                                             </Grid>
