@@ -15,7 +15,7 @@ const ConnectButton = styled(WalletDialogButton)`
   color: white;
   text-transform: capitalize;
   font-family: 'Saira';
-  font-size: 15px;
+  font-size: 16px;
   margin-left: -5%;
   margin-top: 5%;
   font-weight: bold;
