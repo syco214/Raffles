@@ -1,7 +1,7 @@
 import { isMobile } from 'react-device-detect'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import Machine from './assets/sabre.png';
+import Machine from './assets/resource.png';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
 import { Divider, Box } from '@material-ui/core';
@@ -75,7 +75,7 @@ const MintContainer = styled.div`
   z-index: 5;
 `; // add your owns styles here
 
-export default function Weapon9(){
+export default function Weapon10(){
   const classes = useStyles();
 
   return (
@@ -86,7 +86,7 @@ export default function Weapon9(){
               <Card className={classes.root}>
                    <CardContent>
                         <Header className={classes.title} variant="h5" gutterBottom>
-                        Bounty Hunter Space Guild Black Market (Week 8)
+                        Bounty Hunter Space Guild Black Market (Week 9)
                         </Header>
                    </CardContent>
                    <CardContent className={classes.cardSection}>
@@ -97,7 +97,7 @@ export default function Weapon9(){
                              <Grid item md={7} xs={12}>
                                   <Box className={classes.box}>
                                        <Box my={1}>
-                                          <Title>Ancient Velurian Sabre</Title>
+                                          <Title>Resource One</Title>
                                        </Box>
                                        <Grid container justifyContent="center">
                                             <Grid item xs={5}>
@@ -110,7 +110,7 @@ export default function Weapon9(){
                                                         color="textPrimary"
                                                         style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                       >
-                                                        15000 $BNTY
+                                                        3000 $BNTY
                                                       </Typography>
                                                     </Grid>
                                             </Grid>
@@ -131,7 +131,7 @@ export default function Weapon9(){
                                                           display="block"
                                                           style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                         >
-                                                          06/12/2022
+                                                          06/19/2022
                                                         </Typography>
                                                       </>
                                                 </Grid>                                                 
@@ -149,7 +149,7 @@ export default function Weapon9(){
                                                         color="textPrimary"
                                                         style={{ fontFamily: 'Saira', fontWeight: 'bold' }}
                                                       >
-                                                        60
+                                                        250
                                                       </Typography>
                                                     </Grid>
                                             </Grid>
